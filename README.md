@@ -13,7 +13,7 @@ Machine setup:
 
 # TROUBLESHOTINGS
 
-### DELETING PACKAGES AND THEIR CONFIGURATION {#Delete_Packages}
+### DELETING PACKAGES AND THEIR CONFIGURATION
 
 1. List packages to exclude:
    `sudo apt list --installed | grep <package>`
@@ -26,18 +26,24 @@ Machine setup:
 
 ### MYSQL ROOT PASSWORD ISSUE
 
-1. Follow this [section](#Delete_Packages)
+1. Follow the "DELETING PACKAGES AND THEIR CONFIGURATION" section
 
 2. - Terminal:
+
      `sudo apt-get install mysql-server mysql-client`
+     
      `sudo systemctl enable mysql`
+     
      `sudo mysql -u root mysql`
 
    - On MySQL terminal :
 
      > UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+     
      > FLUSH PRIVILEGES;
+     
      > ALTER USER root@localhost IDENTIFIED BY 'password';
 
    - Terminal:
+
      `sudo mysql_secure_installation`
