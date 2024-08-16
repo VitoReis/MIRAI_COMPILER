@@ -4,12 +4,21 @@
 
 This is a shell script I wrote to download prerequisites and compile MIRAI.
 
-Machine setup:
+### Machine setup:
 
 - Ubuntu 24.04 LTS
 - Go 1.6.2 - Old version works better
 - MySQL - Latest
 - Git - Latest
+
+### How to run:
+
+On your terminal run this commands in order:
+
+- chmod +x \*.sh
+- ./presets.sh
+- source ~/.bashrc
+- ./compiler.sh
 
 # TROUBLESHOTINGS
 
