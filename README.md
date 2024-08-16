@@ -13,7 +13,7 @@ This is a shell script I wrote to download prerequisites and compile MIRAI.
 
 ### How to run:
 
-On your terminal run this commands in order:
+In your terminal, execute these commands in order:
 
 - chmod +x \*.sh
 - ./presets.sh
